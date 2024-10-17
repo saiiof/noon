@@ -7,7 +7,7 @@ import { globalErrorHandling } from "./src/middleware/asyncHandler.js";
 import { initApp } from "./src/bootStrap.js";
 //create server
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000
 dotenv.config({path : path.resolve('./config/.env')})
 //connect db
 connectDB();
