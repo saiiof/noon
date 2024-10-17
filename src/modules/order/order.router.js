@@ -6,7 +6,7 @@ import { createOrder } from "./order.controller.js";
 import { isAuthenticated } from "../../middleware/authentication.js";
 import { isAutheroized } from "../../middleware/autheroization.js";
 
-const orderRouter = Router();
+const   orderRouter = Router();
 // create order
 orderRouter.post(
   "/",
